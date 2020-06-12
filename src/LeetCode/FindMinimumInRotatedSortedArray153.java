@@ -15,7 +15,7 @@ package LeetCode;
  *      2. 二分结束的条件，left + 1 = right，只有两个元素的时候，最小值一定在两个元素之间产生
  *      3. 如果 nums[left] < nums[mid] , 说明left--mid这个区间是升序的，left = mid
  *      4. 如果 nums[left] > nums[mid] , 说明mid --right这个区间升序，right = mid ,不能为mid - 1，因为mid 可能为最小值
- *
+ *      100% , 5.55%
  */
 public class FindMinimumInRotatedSortedArray153 {
     public static void main(String[] args) {
