@@ -55,5 +55,6 @@ public class NumberOfIslands200 {
         for(int i = 0;i < dx.length ; i ++){
             dfs(grid , x + dx[i] , y + dy[i]);
         }
+        // 这里也可以使用dfs(grid , x + 1, y )；等形式遍历四周
     }
 }
