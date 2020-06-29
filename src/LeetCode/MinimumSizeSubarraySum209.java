@@ -1,6 +1,5 @@
 package LeetCode;
 
-import java.sql.SQLOutput;
 import java.util.Arrays;
 
 /**
