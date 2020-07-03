@@ -61,7 +61,7 @@ class Trie {
             }
             node = node.children[c - 'a'];
         }
-        return node.item.equals(word);  //search()要求找到，并且到达了末尾
+        return node.item.equals(word);  //search()要求找到，并且到达了末尾，如果item不初始化，报空指针异常
     }
 
     /** Returns if there is any word in the trie that starts with the given prefix. */
