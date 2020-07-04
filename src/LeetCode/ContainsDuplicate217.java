@@ -21,6 +21,7 @@ import java.util.Set;
  * 思路：比较简单，有两种方法
  *      1. 排序，重复元素一定相邻 ，时间复杂度O(nlgn)，空间复杂度O(1)
  *      2. 哈希，使用HashSet,重复元素，时间复杂度O(N),空间复杂度O(N)
+ *      98.67% , 32.56%
  */
 public class ContainsDuplicate217 {
     public static void main(String[] args) {
