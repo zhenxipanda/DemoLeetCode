@@ -84,6 +84,7 @@ public class CountOfSmallerNumbersAfterSelf315 {
         }
 
         for (int k = s; k <= e; k++) {
+            // 更新当前范围内，降序排序的元素下标
             index[k] = helper[k];
         }
     }
