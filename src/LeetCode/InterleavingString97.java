@@ -51,7 +51,7 @@ public class InterleavingString97 {
                 // ||右边是判断下方来的，左右相比，只是j变了，所以用s2比较
                 else {
                     dp[j] = (dp[j] && s1.charAt(i - 1) == s3.charAt(i + j - 1)) ||
-                            (dp[j - 1] && s2.charAt(j - 1) == s3.charAt(i + j - 1));
+                            (dp[j - 1] && s2.charAt(j - 1 ) == s3.charAt(i + j - 1));
                 }
             }
         }
