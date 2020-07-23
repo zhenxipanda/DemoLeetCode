@@ -5,6 +5,7 @@
 LeetCode 的题解在src目录下的 LeetCode 文件夹下  
 
 目前已有：（持续更新中）  
+lc 64 最小路径和  
 lc 95,  
 lc 297,  
 
