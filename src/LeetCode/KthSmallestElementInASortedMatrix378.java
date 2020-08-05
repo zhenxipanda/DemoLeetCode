@@ -36,7 +36,7 @@ public class KthSmallestElementInASortedMatrix378 {
         int start = matrix[0][0];
         int end = matrix[m - 1][n - 1];
         int count = 0;
-        while(start < end){
+        while(start < end){ //一定是< ,不是 <=
             int mid = (start + end) / 2;
             count = countLess(matrix , mid);
             if(count < k){
