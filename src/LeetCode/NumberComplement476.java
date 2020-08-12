@@ -22,7 +22,7 @@ package LeetCode;
  */
 public class NumberComplement476 {
     public static void main(String[] args) {
-         int num = 8;
+         int num = 0;
          int res = findComplement(num);
         System.out.println(res);
         int ans = findComplement1(num);
@@ -40,7 +40,11 @@ public class NumberComplement476 {
          return (int)(n - 1 - num);
     }
 //    统计num的个数，然后1<< cnt就是第一个大于num的2的幂
+//    有个问题，如果num = 0 ,返回的还是0，应该是1，所以加上额外的判断
     public static int findComplement1(int num){
+        if(num == 0 || num == 1){
+            return num == 0 ? 1 : 0;
+        }
         int n = num , cnt = 0;
         while(n != 0){
             cnt ++;
