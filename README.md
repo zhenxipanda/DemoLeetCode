@@ -6,6 +6,8 @@
 LeetCode 的题解在src目录下的 LeetCode 文件夹下  
 
 目前已有：（持续更新中） 
+lc 1 两数之和  
+lc 2 两数相加  
 lc 20 有效的括号   
 lc 64 最小路径和  
 lc 95,  
