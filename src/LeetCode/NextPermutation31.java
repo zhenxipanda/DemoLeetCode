@@ -44,7 +44,7 @@ public class NextPermutation31 {
         nums[i] = nums[j];
         nums[j] = k;
     }
-    public void reverse(int[] nums , int start){
+    public static void reverse(int[] nums , int start){
         int end = nums.length - 1;
         while(start < end){
             swap(nums , start , end);
