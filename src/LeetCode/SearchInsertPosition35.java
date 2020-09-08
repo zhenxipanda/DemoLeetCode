@@ -22,12 +22,14 @@ package LeetCode;
  *     二分查找，
  *     如果能找到输出位置下标，
  *     如果找不到，就输出其插入位置
- *     100% , 5.55%
+ *     + >> 优先级相同
+ *     100% , 94.04%
  */
 public class SearchInsertPosition35 {
     public static void main(String[] args) {
         int[] nums = {1,3,5,6};
         int target = 4;
+        System.out.println(2 + ((3 - 2) >> 1));
         int res = searchInsert(nums , target);
         System.out.println(res);
     }
@@ -35,7 +37,9 @@ public class SearchInsertPosition35 {
         int left = 0, right = nums.length - 1;
         // 二分查找条件
         while(left <= right){
-            int mid = (left + right) >> 1;
+       //     int mid = (left + right) >> 1;
+            int mid = left + ((right - left) >> 1);  //一定要加括号
+            System.out.println(left + ", " + mid + ", " + right);
             // 找到，即返回
             if(nums[mid] == target){
                 return mid;
