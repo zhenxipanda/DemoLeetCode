@@ -24,7 +24,7 @@ package LeetCode;
  */
 public class FirstMissingPositive41 {
     public static void main(String[] args) {
-         int[] nums = {-1,3,1,4};
+         int[] nums = {1,1};
          int res = firstMissingPositive_1(nums);
         System.out.println(res);
     }
@@ -51,10 +51,9 @@ public class FirstMissingPositive41 {
     public static int firstMissingPositive_1(int[] nums){
         int n = nums.length;
         for(int i = 0;i < n; i ++){
+//            哈希映射函数为nums[i] 放到 nums[i] - 1的下标上
             while(nums[i] > 0 && nums[i] <= n && nums[nums[i] - 1] != nums[i]){
-                int tmp = nums[nums[i] - 1];
-                nums[nums[i] - 1] = nums[i];
-                nums[i] = tmp;
+                swap(nums , nums[i] - 1 , i);
             }
         }
         for(int i = 0;i < n; i ++){
@@ -63,5 +62,10 @@ public class FirstMissingPositive41 {
             }
         }
         return n + 1;
+    }
+    public static void swap(int[] nums , int x , int y){
+        int z = nums[x];
+        nums[x] = nums[y];
+        nums[y] = z;
     }
 }
