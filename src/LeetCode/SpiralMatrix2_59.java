@@ -24,7 +24,7 @@ import java.util.Arrays;
  * 输出: "2314"
  * 思路：因为是n*n矩阵，一定存在完整的顺时针圈，
  *      所以无需向左和向上走时判断top < bottom && left < right
- *      100% , 88.94%
+ *      100% , 47.10%
  */
 public class SpiralMatrix2_59 {
     public static void main(String[] args) {
