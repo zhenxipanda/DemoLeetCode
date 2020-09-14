@@ -16,7 +16,7 @@ package LeetCode;
  *      将结果放入StringBuffer中，一个难点就是最后要判断是否有进位，
  *      有的话，sb.append(carry)，没有的话，可以sb.append(""),可用三目运算符实现
  *      最后，将sb翻转，return sb.reverse().toString().
- *      55.55% , 7.69%
+ *      61.57% , 43.13%
  */
 public class AddBinary67 {
     public static void main(String[] args) {
