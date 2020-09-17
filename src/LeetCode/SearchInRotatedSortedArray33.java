@@ -17,7 +17,7 @@ package LeetCode;
  *      每次二分，缩短长度
  *      100% , 51.33%
  */
-public class SearcInRotatedSortedArray33 {
+public class SearchInRotatedSortedArray33 {
     public static void main(String[] args) {
 
     }
