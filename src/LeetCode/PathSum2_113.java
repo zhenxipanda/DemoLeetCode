@@ -25,7 +25,7 @@ package LeetCode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PathSum2_112 {
+public class PathSum2_113 {
     public static void main(String[] args) {
 
     }
