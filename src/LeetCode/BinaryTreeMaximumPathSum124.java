@@ -36,7 +36,7 @@ public class BinaryTreeMaximumPathSum124 {
         if(root == null){
             return 0;
         }
-        int left = Math.max(0 , dfs(root.left));
+        int left = Math.max(0 , dfs(root.left));    // 关键在于这里有个和0取最大值的过程，如果没有，结果不对
         int right = Math.max(0 , dfs(root.right));
         max = Math.max(max , left + right + root.val);
         return Math.max(left , right) + root.val;
