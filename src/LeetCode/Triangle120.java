@@ -43,7 +43,6 @@ public class Triangle120 {
         int[] dp = new int[size + 1];
         for(int i = triangle.size() - 1; i >= 0;i --){
             List<Integer> li = triangle.get(i);
-         //   System.out.println(li);
             for(int j = 0;j < li.size() ; j ++){
                 dp[j] = li.get(j) + Math.min(dp[j] , dp[j + 1]);
             }
