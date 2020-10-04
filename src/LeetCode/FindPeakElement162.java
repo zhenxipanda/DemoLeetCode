@@ -20,7 +20,7 @@ package LeetCode;
  *      如果nums[mid] > nums[mid + 1] , right = mid , 不能是 mid - 1，因为 mid 可能是峰值
  *      如果nums[mid] < nums[mid + 1] , left = mid + 1 ,不能是 mid ，因为 mid 不可能是峰值(nums[mid+1]>nums[mid])
  *      结束的条件是left == right，left即为峰值
- *      100% , 10.00%
+ *      100% , 43.26%
  */
 public class FindPeakElement162 {
     public static void main(String[] args) {
