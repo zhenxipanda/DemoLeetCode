@@ -15,7 +15,7 @@ import java.util.List;
  *      将找到的符合条件的字符串(整数表示)，还原成字符串，&3,就能得到后两位， >>2，转换下个数
  *      98.79% , 100.00%
  */
-public class RepeatedDnaSequences {
+public class RepeatedDnaSequences187 {
     public static void main(String[] args) {
         String s = "AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT";
         List<String> res = findRepeatedDnaSequences(s);
@@ -44,7 +44,7 @@ public class RepeatedDnaSequences {
         freq[num] ++;
         List<Integer> list = new ArrayList<>();
         for(int i = 10;i < chars.length; i ++){
-            num <<= 2;
+            num <<= 2;                // num 未置零，也就是说i=1~9之间的数字依然存在
             if(chars[i] == 'C'){
                 num |= 1;
             }
