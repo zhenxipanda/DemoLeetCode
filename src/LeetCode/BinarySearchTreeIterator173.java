@@ -43,7 +43,7 @@ public class BinarySearchTreeIterator173 {
     public static boolean hasNext(){
         return index + 1 < list.size();
     }
-    /*  迭代、栈
+    /**  迭代、栈
     static Stack<TreeNode> stack = new Stack<>();
     static TreeNode cur = null ;
     public BinarySearchTreeIterator173(TreeNode root) {
