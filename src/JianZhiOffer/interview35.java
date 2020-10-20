@@ -17,39 +17,39 @@ public class interview35 {
     public static void main(String[] args) {
 
     }
-    public static Node copyRandomList(Node head) {
+    public static RNode copyRandomList(RNode head) {
         copyNode(head);
         connectRandom(head);
         return reConnect(head);
     }
-    public static void copyNode(Node head){
+    public static void copyNode(RNode head){
         if(head == null){
             return ;
         }
-        Node node = head;
+        RNode node = head;
         while(node != null){
-            Node p = new Node(node.val);
+            RNode p = new RNode(node.val);
             //	p.val = node.val;
             p.next = node.next;
             node.next = p;
             node = p.next;
         }
     }
-    public static void connectRandom(Node head){
+    public static void connectRandom(RNode head){
         if(head == null){
             return ;
         }
         while(head != null){
-            Node p = head.next;
+            RNode p = head.next;
             if(head.random != null){
                 p.random = head.random.next;
             }
             head = p.next;
         }
     }
-    public static Node reConnect(Node head){
-        Node first = null;
-        Node node = null;
+    public static RNode reConnect(RNode head){
+        RNode first = null;
+        RNode node = null;
         if(head != null){
             first = head.next;
             node = first;
@@ -66,12 +66,12 @@ public class interview35 {
 
     }
 }
-class Node {
+class RNode {
     int val;
-    Node next;
-    Node random;
+    RNode next;
+    RNode random;
 
-    public Node(int val) {
+    public RNode(int val) {
         this.val = val;
         this.next = null;
         this.random = null;
